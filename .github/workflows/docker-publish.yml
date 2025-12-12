@@ -56,4 +56,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/kashuni258/ci-cd-practice:latest
+          tags: |
+            ghcr.io/kashuni258/ci-cd-practice:latest
+            ghcr.io/kashuni258/ci-cd-practice:${{ github.sha }}
